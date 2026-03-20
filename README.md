@@ -1,16 +1,34 @@
-# React + Vite
+# Smart Toolkit — Q4, Q5, Q10
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A 3-in-1 React application built with Vite + React + Tailwind CSS.
 
-Currently, two official plugins are available:
+## Question Mapping
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Q4 — Route Optimizer (/routes)
+Minimizes distance travelled by delivery trucks across predefined 
+delivery locations using the Nearest Neighbor TSP algorithm with 
+real road routing via OSRM API.
 
-## React Compiler
+### Q5 — CSV Processor (/csv)
+Performs configurable operations on CSV/Excel files including 
+filter, rename, sort, and remove column transforms. 
+Exports processed result as a new CSV file.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Q10 — Hot Topics (/hot-topics)
+Social media trending feed showing top 20 posts ranked by a 
+scoring formula: (likes × 3) + (comments × 5) + (views × 1) + recency decay.
+Features category filtering, search, bookmarks, and personalized interests.
 
-## Expanding the ESLint configuration
+## Tech Stack
+- React 18 + Vite
+- React Router v6
+- Tailwind CSS
+- Zustand (state management)
+- PapaParse (CSV parsing)
+- SheetJS (Excel parsing)
+- React Leaflet + OSRM (maps and routing)
+- Lucide React (icons)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Running locally
+npm install
+npm run dev
